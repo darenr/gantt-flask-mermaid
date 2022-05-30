@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/static/css/style.css">
+
+
+</head>
+
+<body>
+  <div class="mermaid">
+    {{code | safe}}
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      securityLevel: 'loose'
+    });
+
+    mermaid.ganttConfig = {
+      titleTopMargin: 25,
+      barHeight: 20,
+      barGap: 4,
+      topPadding: 75,
+      sidePadding: 75
+    }
+  </script>
+</body>
+
+</html>
